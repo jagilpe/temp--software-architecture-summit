@@ -20,6 +20,7 @@ Domain
   Bounded Context
   - Sprachliche Grenze
   - Verlaufsform
+  - "Ubiquitous Language"
 
     Aggregate
 
