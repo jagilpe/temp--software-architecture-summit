@@ -133,3 +133,29 @@ UI  ---------------------------+
      Query (GET)          Projection
            \                   v
             -- API (Read) - Viewstore
+
+## Shell-Kommandos
+
+### Anwendung starten
+
+```shell
+$ node app.js
+```
+
+### Command ausführen
+
+```shell
+$ curl -i -X POST -H "content-type:application/json" -d '{"context":{"name":"playing"},"aggregate":{"name":"game","id":"8eca4f01-c86f-452a-9cfe-37a82042e071"},"name":"open","id":"d5e90fe5-b065-4ce5-9560-1943026bc4e7"}' http://localhost:3000/api/v1/command
+```
+
+### Events abonnieren
+
+```shell
+$ curl -i http://localhost:3000/api/v1/events
+```
+
+### Query ausführen
+
+```shell
+$ curl -i http://localhost:3000/api/v1/query/games
+```
